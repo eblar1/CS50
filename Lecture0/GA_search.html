@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+
+<!-- header -->
+
+    <div>
+        <div>
+            <div class="upperright-links" role="navigation" role="search">
+                <a href="index.html">Google Search</a>
+            </div>
+        </div>
+        
+    
+    
+        <img class="logo" src="/Users/Erwan/Desktop/CS50W/Lecture 0/Google-logo.png" alt="Google-logo">
+        </div>
+    <div id="header"></div>
+
+<!-- Titles -->
+
+    <div>
+        <h1>
+            Advanced Search
+        </h1>
+        <h2>
+            Find pages with...
+        </h2>
+    </div>
+
+<!-- Input & label -->
+
+    <form action="https://www.google.com/search" role="search" autocomplete="off">
+        <p>
+            <label for="cta">all these words:</label>
+            <input class="adv_input" type="text" name="q" id="all">
+        </p>
+        <p>
+            <label for="exact">this exact word or phrase:</label>
+            <input class="adv_input" type="text" name="q" id="exact">
+        </p>
+        <p>
+            <label for="any">any of these words:</label>
+            <input class="adv_input" type="text" name="q" id="any">
+        </p>
+        <p>
+            <label for="none">none of these words:</label>
+            <input class="adv_input" type="text" name="q" id="none">
+        </p>
+        <p>
+            <button class="adv_cta" id="cta">
+                Advanced search
+            </button>
+        </p>
+    </form>
+    </div>
+</body>
+</html>
