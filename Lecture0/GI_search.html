@@ -10,9 +10,9 @@
 <body>
     
     <header>
-    <div class="upperright-links" role="navigation">
+    <div tabindex="1" class="upperright-links" role="navigation">
         <a href="index.html" id="first_upper_link" target="_self">Google Search</a>
-    </div>
+    </div >
 
     <div class="main"></div>
     </header>
@@ -25,15 +25,14 @@
 
         <div class="container">
             <form action="http://www.images.google.com/images" role="search" autocomplete="off" method="get">
-                <div>
+                <fieldset>
                     <input type="text" name="q"> <br>
-                    <button class="button-search" type="submit" value="image-search" style="margin: 5px;"> 
-                            Image search
-                    </button>
-                </div>
+                    <button class="button-search" type="submit" value="image-search">Image search</button>
+                <fieldset
+
+
             </form>
         </div>
-    </div>
     </main>
     <footer></footer>
 </body>
