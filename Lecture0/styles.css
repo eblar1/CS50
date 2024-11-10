@@ -1,3 +1,7 @@
+*, :after, :before {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -6,31 +10,20 @@ body {
     margin-top: 0;
     margin-bottom: 2%;
 }
-.main {
+.line {
     position: relative;
     top: 300px;
     text-align: center;
 }
 
-a:link{
+a {
     color: #1F1F1F;
     text-decoration: none;
-  }
-  a:visited{
-    color:#1F1F1F;
-    text-decoration: none;
-  }
-  a:hover{
+}
+
+a:hover{
     color:#1F1F1F;
     text-decoration: underline;
-
-  }
-  a:focus{
-    color:#1F1F1F;
-  }
-  a:active{
-    color:#1F1F1F;
-    text-decoration: none;
   }
 
 .upperright-links {
@@ -47,6 +40,10 @@ a:link{
 
 #first_upper_link {
     margin-right: 12px;
+}
+
+.main {
+    margin-top: 20%;
 }
 
 .logo {
@@ -68,6 +65,7 @@ a:link{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .button-search {
@@ -78,7 +76,7 @@ a:link{
     margin-right: auto;
     background-color: #f8f9fA;
     color: #3c4043;
-    border: 0px;
+    border: 0;
     font-size: 14px;
     border-radius: 4px;
     text-align: center;
@@ -91,7 +89,7 @@ a:link{
     margin: 11px 4px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 4px rgb(199, 199, 199);
+    box-shadow: 0 0 4px rgb(199, 199, 199);
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
@@ -112,7 +110,7 @@ input[type=text]:hover {
     width: 551px;
     background-color: #fff;
     border-radius: 24px;
-    box-shadow: 0px 0px 5px rgb(223, 222, 222);
+    box-shadow: 0 0 5px rgb(223, 222, 222);
 }
 
 input[type=text]:focus {
