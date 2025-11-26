@@ -4,6 +4,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .header {
@@ -65,34 +66,35 @@ a:hover{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
 .button-search {
+    display: inline-block;
     position: relative;
     padding: 16px;
     margin: 11px 4px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #f8f9fA;
     color: #3c4043;
     border: 0;
     font-size: 14px;
     border-radius: 4px;
     text-align: center;
+    cursor: pointer; /* Ajoute le petit doigt au survol, c'est mieux niveau UX */
 }
 
 .button-search:hover {
-    display: block;
     position: relative;
     padding: 16px;
     margin: 11px 4px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 0 4px rgb(199, 199, 199);
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
+    border-color: rgba(223, 221, 221, 0); /* On peut alléger la bordure si on met une ombre */
 }
 
 input[type=text] {
@@ -103,20 +105,21 @@ input[type=text] {
     margin-bottom: 13px;
     background-color: #fff;
     border-radius: 24px;
+    box-shadow: 2px 2px 6px 1px rgb(229, 229, 236);
     border: 1px solid #dfe1e5;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 input[type=text]:hover {
-    width: 551px;
     background-color: #fff;
     border-radius: 24px;
-    box-shadow: 0 0 5px rgb(223, 222, 222);
+    box-shadow: 0 1px 6px rgb(223, 222, 222);
+
 }
 
 input[type=text]:focus {
-    width: 552px;
     padding: 12px;
     background-color: #fff;
     border-radius: 24px;
-    box-shadow: -1px 1px 3px rgb(223, 222, 222);
+    box-shadow: 0px 1px 3px rgb(223, 222, 222);
 }
