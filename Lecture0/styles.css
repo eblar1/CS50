@@ -80,10 +80,10 @@ a:hover{
     font-size: 14px;
     border-radius: 4px;
     text-align: center;
-
 }
 
 .button-search:hover {
+    display: block;
     position: relative;
     padding: 16px;
     margin: 11px 4px;
